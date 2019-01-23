@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~font-awesome/css/font-awesome.css";
+//@import "~mdbootstrap/scss/mdb.scss";
+
+$klimcars-red: #FF0000;
+$klimcars-dark: #252525;
+$klimcars-bright: #555555;
+
+
+body { background-color: $klimcars-bright; }
+.klimcars-dark-bg{
+  background-color: $klimcars-dark;
+}
+
+.klimcars-bright-bg{
+  background-color: $klimcars-bright;
+}
+
+.klimcars-red-bg{
+  background-color: $klimcars-red;
+}
+
+.klimcars-dark{
+  color: $klimcars-dark;
+}
+
+.klimcars-red{
+  color: $klimcars-red;
+}

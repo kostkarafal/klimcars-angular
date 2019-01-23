@@ -1,0 +1,15 @@
+@import "~src/styles.scss";
+.max-image-size{
+  width: 220px;
+  height: 50px;
+}
+
+
+.navbar-toggle{
+  background-color: $klimcars-dark;
+}
+
+.navbar-toggle:focus{
+  border-color: $klimcars-red !important;
+}
+
