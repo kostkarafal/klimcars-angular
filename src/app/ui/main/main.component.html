@@ -1,11 +1,153 @@
+<!--<div>
+  <img class="img-width-full-screen" src="assets/img/KLIMCARS.png">
+</div>-->
+<slideshow [height]="height"
+           [minHeight]="'425px'"
+           [autoPlay]="true"
+           [showArrows]="false"
+           [imageUrls]="imageSources"
+           [lazyLoad]="imageSources?.length > 1"
+           [autoPlayInterval]="10000"
+           [autoPlayWaitForLazyLoad]="true"> <p>test test</p>
+</slideshow>
+<div id="main" class="container main-font">
 
-  <div class="jumbotron">
-    <h1>Klim Cars</h1>
+    <div class="text-center"><img style="width:50%; height: auto" src="assets/img/logo-md.png"> </div>
 <p>
-  Tematem pracy jest stworzenie aplikacji służącej do obsługi restauracji. Rozbudowany system do zarządzania zamówieniami pozwala usprawnić funkcjonowanie lokalu gastronomicznego. Korzyści płynące z wdrożenia systemu informatycznego do restauracji są odczuwalne zarówno dla klienta, obsługi jak i właściciela restauracji. Kolejno klient będzie posiadać dodatkową formę składania zamówień, pracownicy będą posiadać mniejszy zakres obowiązków w pracy ponieważ system może obsługiwać część zadań w procesie składania zamówienia. Korzyści dla właściciela restauracji również są znaczne ponieważ długofalowo pozwala zmniejszyć koszt obsługi restauracji oraz aplikacja sama w sobie jest formą reklamy.
-  Celem pracy jest realizacja części funkcjonalności systemu informatycznego niezbędnych do stworzenia aplikacji mobilnej dla klienta restauracji. Będzie to aplikacja stworzona na platformę android w której będzie można wykonywać tylko przypadki użycia przewidziane dla klienta restauracji oraz aplikacja serwerowa która ma za zadanie obsługiwać zarówno przypadku użycia klientów, obsługi oraz administracji (przypadki użycia obsługi oraz administracji nie są realizowane w zakresie niniejszej pracy).
-
+  Witaj, oferujemy nabijanie i serwis klimatyzacji samochodowej. W naszej ofercie znajduje się, oczyszczanie i osuszanie układu oraz wytworzenie próżni. Sprawdzamy szczelność azotem z wodorem oraz specjalistycznym miernikiem wykrywane są nieszczelności. Napełnianie układu klimatyzacji czynnikiem R 134a oraz jego odzyskiwanie.
+  <br><p style="color: red; font-weight: bold;">Promocja - cena za serwis od 80zł, sprawdzanie szczelności - od 35zł . Ozonowanie w cenie. Terminy dostępne od zaraz.</p>
 </p>
+
+  <div id="offer" class="row">
+    <div class=" col-sm-12 col-md-6 col-lg-4 ">
+      <div class="square text-center">
+        <h3 >Odzyskiwanie</h3>
+        <i class="fa fa-4x klimcars-red fa-recycle text-center"></i> <br>
+      W naszej ofercie znajdą Państwo odzwyskiwanie czynnika R134a
+    </div>
+    </div>
+    <div class=" col-sm-12 col-md-6 col-lg-4 ">
+      <div class="square text-center">
+        <h3>Oczyszczanie</h3>
+        <i class="fa fa-4x klimcars-red fa-wrench text-center"></i> <br>
+        Oczyszczenie, osuszenie układu, wytworzenie próżni w układzie
+      </div>
+    </div>
+    <div class=" col-sm-12 col-md-6 col-lg-4 ">
+      <div class="square text-center">
+        <h3>Test szczelności</h3>
+        <i class="fa fa-4x klimcars-red fa-tachometer text-center"></i> <br>
+        Sprawdzanie szczelności azotem z wodorem oraz specjalnistycznym miernikiem wykrywanie nieszczelności
+      </div>
+    </div>
+    <div class=" col-sm-12 col-md-6 col-lg-4 ">
+      <div class="square text-center">
+        <h3>Napełnianie</h3>
+        <i class="fa fa-4x klimcars-red fa-snowflake-o text-center"></i> <br>
+        Napełnienie układu czynnikiem R 134a
+    </div>
+    </div>
+    <div class=" col-sm-12 col-md-6 col-lg-4 ">
+      <div class="square text-center">
+        <h3>Ozonowanie</h3>
+        <i class="fa fa-4x klimcars-red fa-check text-center"></i> <br>
+        OZONOWANIE w cenie przy serwisie gratis !
+      </div>
+    </div>
+    <div class=" col-sm-12 col-md-6 col-lg-4 ">
+      <div class="square text-center">
+        <h3>Nabijanie Klimatyzacji</h3>
+        <i class="fa fa-4x klimcars-red fa-dollar text-center"></i> <br>
+        Oferujemy nabijanie klimatyzacji od 80zł. WYsoka jakość oraz niskie ceny.
+      </div>
+    </div>
+  </div>
+
+  <div id="about-us" class="horizontal-line"></div>
+
+
+  <div  class="row">
+    <h1 class="col-12 text-center">O nas</h1>
+    <div class="col-12">Jesteśmy firmą zajmującą się serwisem klimatyzacji samochodowych. Na rynku działamy już od dłuższego czasu, oferujemy konkurencyjne ceny. Staramy się aby klient był zadowolony korzystając z naszych usług. Dlatego jeżeli skorzystasz z naszych usług oferujemy ozonowanie w cenie serwisu klimatyzacji. Nasza siedziba mieści się w mikołowie przy ulicy jakiejs, ale zapraszamy również mieszkańców z całego Śląska. Jeżeli jesteś zainteresowany i chcesz dowiedzieć się więcej lub w jaki sposób działamy zadzwoń i przekonaj się sam.</div>
+  </div>
+
+  <div id="contact" class="horizontal-line"></div>
+
+  <div  class="row">
+    <h1 class="col-12 text-center">Kontakt</h1>
+    <div class="col-sm-12 col-md-6">
+      <div class="row addres-container">
+        <h5 class="col-12 ">Adres</h5><br>
+        <div class="col-12">ul.Ludwika Spyry 24b, 43-196 Mikołów-Bujaków</div>
+      </div>
+      <div class="row addres-container">
+        <h5 class="col-12 ">Telefon</h5><br>
+        <div class="col-12"><a style="color: white" href="tel:516 752 525">516 752 525</a></div>
+      </div>
+      <div class="row addres-container">
+        <h5 class="col-12 ">E-mail</h5><br>
+        <div class="col-12">kostek.bogus7610@gmail.com</div>
+      </div>
+      <div class="row addres-container">
+        <h5 class="col-12 ">Zapraszamy</h5><br>
+        <div class="col-12">poniedziałek-piątek 8:00-19:00</div>
+        <div class="col-12">sobota 9:00-15:00</div>
+
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6">
+      <div class="row margin-address-form">
+        <h5 class="col-12">Formularz</h5>
+      </div>
+      <div class="row margin-address-form">
+        <div class="col-12"> <input class="col-12" placeholder="Imie i nazwisko"></div>
+      </div>
+      <div class="row margin-address-form">
+        <div class="col-6 "><input class="col-12" placeholder="Telefon"></div>
+        <div class="col-6"><input class="col-12"  placeholder="Emial"></div>
+      </div>
+      <div class="row margin-address-form">
+        <div class="col-12"><input class="col-12" style="height: 180px" placeholder="Treść"></div>
+      </div>
+      <div class="row margin-address-form">
+        <div class="col-6"><div class="col-12"></div></div>
+        <div class="col-6"><div class="col-12 mat-flat-button klimcars-button">Wyślij</div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="horizontal-line"></div>
+
+  <div class="row addres-container">
+    <div class="col-6 text-center">
+      <h5 class="col-12 ">Facebook</h5><br>
+      <div class="col-12 te">
+        <a class="facebook-link" href="https://www.facebook.com/Klim-Cars-2429987527026245/">
+          <i class="fa fa-4x fa-facebook-square"></i>
+        </a>
+      </div>
+    </div>
+    <div class="col-6 text-center">
+      <h5 class="col-12 ">Nawiguj</h5><br>
+      <div class="col-12">
+        <a class="navigate-link" href="https://www.google.com/maps/place/KLIM-CARS/@50.1761932,18.7888766,20z/data=!4m5!3m4!1s0x0:0xe8571dc64d35b6eb!8m2!3d50.1762888!4d18.7889174">
+          <i class="fa fa-4x fa-location-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
 </div>
+
+<agm-map  [latitude]="lat" [longitude]="lng" [scrollwheel]="false"  [zoom]="15">
+<agm-marker [latitude]="lat" [longitude]="lng">
+  <agm-info-window>Klim-Cars
+    <a href="https://www.google.com/maps/place/KLIM-CARS/@50.1761932,18.7888766,20z/data=!4m5!3m4!1s0x0:0xe8571dc64d35b6eb!8m2!3d50.1762888!4d18.7889174">Otwórz mapy google</a>
+    </agm-info-window>
+  </agm-marker>
+</agm-map>
 
 

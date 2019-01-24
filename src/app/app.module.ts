@@ -10,13 +10,13 @@ import { AboutUsComponent } from './ui/about-us/about-us.component';
 import { MainComponent } from './ui/main/main.component';
 import { ContactComponent } from './ui/contact/contact.component';
 import { OfferComponent } from './ui/offer/offer.component';
+import {SlideshowModule} from 'ng-simple-slideshow';
+import { AgmCoreModule } from '@agm/core';
+
 
 const appRoutes: Routes = [
-  { path: 'about-us', component: AboutUsComponent },
-  { path: 'main', component: MainComponent },
-  { path: 'offer', component: OfferComponent},
-  { path: 'contact', component: ContactComponent },
-  { path: '**', redirectTo: '/main', pathMatch: 'full' }
+  { path: '', component: MainComponent },
+  { path: '**', redirectTo: '/', pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -34,8 +34,14 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
+      { enableTracing: true, // <-- debugging purposes only
+               scrollPositionRestoration: 'enabled',
+               anchorScrolling: 'enabled'
+      }),
+    SlideshowModule,
+    AgmCoreModule.forRoot({
+    apiKey: 'AIzaSyDTLwbMuOYLR3cv1G99kGNDNMSiivkgVaE'
+  })
   ],
   providers: [],
   bootstrap: [AppComponent]

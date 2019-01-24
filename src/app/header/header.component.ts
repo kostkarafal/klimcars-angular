@@ -17,4 +17,10 @@ export class HeaderComponent implements OnInit {
   hideNavbar() {
     this.navbarOpen = false;
   }
+  scroll(el: any) {
+    this.navbarOpen = false;
+    const elementList = document.querySelectorAll(el);
+    const element = elementList[0] as HTMLElement;
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
 }

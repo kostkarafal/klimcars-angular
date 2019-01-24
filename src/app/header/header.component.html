@@ -7,16 +7,16 @@
   <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen}" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link"  routerLink="/main" routerLinkActive="active" (click)="hideNavbar()">Strona główna</a>
+        <a class="nav-link"  routerLink="/" [fragment]="'main'" routerLinkActive="active" (click)="hideNavbar()">Strona główna</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/offer" routerLinkActive="active" (click)="hideNavbar()">Oferta</a>
+        <a class="nav-link" routerLink="/" [fragment]="'offer'" routerLinkActive="active" (click)="hideNavbar()">Oferta</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/about-us" routerLinkActive="active" (click)="hideNavbar()">O nas</a>
+        <a class="nav-link" routerLink="/" [fragment]="'about-us'" routerLinkActive="active" (click)="hideNavbar()">O nas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/contact" routerLinkActive="active" (click)="hideNavbar()">Kontakt</a>
+        <a class="nav-link"  routerLink="/" [fragment]="'contact'" routerLinkActive="active" (click)="hideNavbar()" >Kontakt</a>
       </li>
      <!-- <li class="nav-item dropdown ">
         <a class="nav-link dropdown-toggle show" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -5,9 +5,9 @@
 @import "~font-awesome/css/font-awesome.css";
 //@import "~mdbootstrap/scss/mdb.scss";
 
-$klimcars-red: #FF0000;
+$klimcars-red: #E00000;
 $klimcars-dark: #252525;
-$klimcars-bright: #555555;
+$klimcars-bright: #353535;
 
 
 body { background-color: $klimcars-bright; }
@@ -30,3 +30,9 @@ body { background-color: $klimcars-bright; }
 .klimcars-red{
   color: $klimcars-red;
 }
+
+.img-width-full-screen{
+  width: 100%;
+  height: auto;
+}
+
