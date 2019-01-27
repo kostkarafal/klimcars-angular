@@ -94,7 +94,7 @@
       </div>
       <div class="row addres-container">
         <h5 class="col-12 ">E-mail</h5><br>
-        <div class="col-12"><a style="color: white" href="mailto:kostek.bogus7610@gmail.com">kostek.bogus7610@gmail.com</a></div>
+        <div class="col-12"><a style="color: white" href="mailto:kostek.7610bogus@gmail.com">kostek.7610bogus@gmail.com</a></div>
       </div>
       <div class="row addres-container">
         <h5 class="col-12 ">Zapraszamy</h5><br>
@@ -103,27 +103,28 @@
 
       </div>
     </div>
-
     <div class="col-sm-12 col-md-6">
       <div class="row margin-address-form">
         <h5 class="col-12">Formularz</h5>
       </div>
+      <form action="https://formspree.io/kostek.7610bogus@gmail.com" method="POST">
+
       <div class="row margin-address-form">
-        <div class="col-12"> <input class="col-12" placeholder="Imie i nazwisko"></div>
+        <div class="col-12"> <input type="text" name="name" class="col-12" placeholder="Imie i nazwisko"></div>
       </div>
       <div class="row margin-address-form">
-        <div class="col-6 "><input class="col-12" placeholder="Telefon"></div>
-        <div class="col-6"><input class="col-12"  placeholder="Emial"></div>
+        <div class="col-6 "><input type="text" name="phone" class="col-12" placeholder="Telefon"></div>
+        <div class="col-6"><input type="email" name="email" class="col-12"  placeholder="Emial"></div>
       </div>
       <div class="row margin-address-form">
-        <div class="col-12"><input class="col-12" style="height: 180px" placeholder="Treść"></div>
+        <div class="col-12"><textarea name="message" type="text" ngModel="message" class="col-12" style="height: 180px" placeholder="Treść"></textarea></div>
       </div>
       <div class="row margin-address-form">
         <div class="col-6"><div class="col-12"></div></div>
-        <div class="col-6"><div class="col-12 mat-flat-button klimcars-button">Wyślij</div></div>
+        <div class="col-6"><button type="submit" class="col-12 mat-flat-button klimcars-button">Wyślij</button></div>
       </div>
+      </form>
     </div>
-
   </div>
 
   <div class="horizontal-line"></div>
